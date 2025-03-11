@@ -9,7 +9,7 @@ import {
   dameEstadoPartida
 } from "./motor";
 
-function dameURLCarta(carta){
+export function dameURLCarta(carta){
     switch(carta){
       case 1:
           return ("https://raw.githubusercontent.com/Lemoncode/fotos-ejemplos/main/cartas/copas/1_as-copas.jpg") 
@@ -32,7 +32,7 @@ function dameURLCarta(carta){
       case 11:
           return ("https://raw.githubusercontent.com/Lemoncode/fotos-ejemplos/main/cartas/copas/12_rey-copas.jpg");
       default:
-          console.log("Numero irregular.");
+          console.log ("Numero irregular.");
           console.log(carta);
   }
   }

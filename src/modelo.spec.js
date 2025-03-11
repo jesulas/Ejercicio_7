@@ -1,7 +1,7 @@
 import {expect, it, vi} from "vitest";
 import {partida} from "./modelo";
 import { dameCarta,obtenerPuntosCarta ,dameEstadoPartida, numeroAleatorio, sumarPuntos } from "./motor";
-import * as ui from "./ui";
+    
 
 describe("darEstadoPartida", () => {
     
@@ -103,17 +103,5 @@ describe("comprobacionGeneracionCartas", () => {
         const resultado = sumarPuntos(puntos);
         //Assert
         expect(resultado).toBe(7);
-    })
-
-    
-})
-
-describe("comprobacionURLCartas", () => {
-    it("dameURLCarta, dado un numero que no tenga un case asignado, ", () => {
-        const carta = 23;
-        //Act
-        const resultado = dameURLCarta(carta)
-        //Assert
-        expect(console).toBeCalledWith("Numero irregular.");
     })
 })

@@ -1,15 +1,5 @@
 import{ partida
  }from "./modelo";
-/*
-import { dameURLCarta,
-          revisarPartida,
-          mostrarURLCarta,
-          reiniciar,
-          actualizarPuntosTotales,
-          actualizarText
- } from "./ui";
-*/
-
   
 export function numeroAleatorio(){
     return (Math.floor(Math.random()*(10)))
